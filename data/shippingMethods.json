@@ -1,0 +1,14 @@
+{
+    "same day": {
+      "price": 14.99
+    },
+    "one day": {
+      "price": 9.99
+    },
+    "two day": {
+      "price": 4.99
+    },
+    "some day": {
+      "price": 0.00
+    }
+}

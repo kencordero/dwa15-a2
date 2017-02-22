@@ -1,0 +1,31 @@
+{
+  "shirt": {
+    "price": 19.99,
+    "imageUrl": "/images/shirt.jpg",
+    "isClothing": true
+  },
+  "pants": {
+    "price": 29.99,
+    "imageUrl": "/images/pants.jpg",
+    "isClothing": true
+  },
+  "hat": {
+    "price": 9.99,
+    "imageUrl": "/images/hat.jpg",
+    "isClothing": true
+  },
+  "socks": {
+    "price": 5.00,
+    "imageUrl": "/images/socks.jpg",
+    "isClothing": true
+  },
+  "shoes": {
+    "price": 79.99,
+    "imageUrl": "/images/shoes.jpg",
+    "isClothing": true
+  },
+  "television": {
+    "price": 1999.99,
+    "imageUrl": "/images/tv.jpg",    
+  }
+}

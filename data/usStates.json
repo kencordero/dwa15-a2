@@ -1,0 +1,217 @@
+{
+   "Alabama": {
+     "code": "AL",
+     "salesTaxRate": 4
+   },
+    "Alaska": {
+      "code": "AK",
+      "salesTaxRate": 0
+    },
+    "Arizona": {
+      "code": "AZ",
+      "salesTaxRate": 5.6
+    },
+    "Arkansas": {
+      "code": "AR",
+      "salesTaxRate": 6.5
+    },
+    "California": {
+      "code": "CA",
+      "salesTaxRate": 7.25
+    },
+    "Colorado": {
+      "code": "CO",
+      "salesTaxRate": 2.9
+    },
+    "Connecticut": {
+      "code": "CT",
+      "salesTaxRate": 6.35
+    },
+    "Delaware": {
+      "code": "DE",
+      "salesTaxRate": 0
+    },
+    "District of Columbia": {
+      "code": "DC",
+      "salesTaxRate": 5.75
+    },
+    "Florida": {
+      "code": "FL",
+      "salesTaxRate": 6
+    },
+    "Georgia": {
+      "code": "GA",
+      "salesTaxRate": 4
+    },
+    "Hawaii": {
+      "code": "HI",
+      "salesTaxRate": 4.166
+    },
+    "Idaho": {
+      "code": "ID",
+      "salesTaxRate": 6
+    },
+    "Illinois": {
+      "code": "IL",
+      "salesTaxRate": 6.25
+    },
+    "Indiana": {
+      "code": "IN",
+      "salesTaxRate": 7
+    },
+    "Iowa": {
+      "code": "IA",
+      "salesTaxRate": 6
+    },
+    "Kansas": {
+      "code": "KS",
+      "salesTaxRate": 6.5
+    },
+    "Kentucky": {
+      "code": "KY",
+      "salesTaxRate": 6
+    },
+    "Louisiana": {
+      "code": "LA",
+      "salesTaxRate": 5
+    },
+    "Maine": {
+      "code": "ME",
+      "salesTaxRate": 5.5
+    },
+    "Maryland": {
+      "code": "MD",
+      "salesTaxRate": 6
+    },
+    "Massachusetts": {
+      "code": "MA",
+      "salesTaxRate": 6.25,
+      "clothingExemption": 175
+    },
+    "Michigan": {
+      "code": "MI",
+      "salesTaxRate": 6
+    },
+    "Minnesota": {
+      "code": "MN",
+      "salesTaxRate": 6.875,
+      "clothingExempted": true
+    },
+    "Mississippi": {
+      "code": "MS",
+      "salesTaxRate": 7
+    },
+    "Missouri": {
+      "code": "MO",
+      "salesTaxRate": 4.225
+    },
+    "Montana": {
+      "code": "MT",
+      "salesTaxRate": 0
+    },
+    "Nebraska": {
+      "code": "NE",
+      "salesTaxRate": 5.5
+    },
+    "Nevada": {
+      "code": "NV",
+      "salesTaxRate": 6.85
+    },
+    "New Hampshire": {
+      "code": "NH",
+      "salesTaxRate": 0
+    },
+    "New Jersey": {
+      "code": "NJ",
+      "salesTaxRate": 6.875,
+      "clothingExempted": true
+    },
+    "New Mexico": {
+      "code": "NM",
+      "salesTaxRate": 5.125
+    },
+    "New York": {
+      "code": "NY",
+      "salesTaxRate": 4,
+      "clothingExemption": 110
+    },
+    "North Carolina": {
+      "code": "NC",
+      "salesTaxRate": 4.75
+    },
+    "North Dakota": {
+      "code": "ND",
+      "salesTaxRate": 5
+    },
+    "Ohio": {
+      "code": "OH",
+      "salesTaxRate": 5.75
+    },
+    "Oklahoma": {
+      "code": "OK",
+      "salesTaxRate": 4.5
+    },
+    "Oregon": {
+      "code": "OR",
+      "salesTaxRate": 0
+    },
+    "Pennsylvania": {
+      "code": "PA",
+      "salesTaxRate": 6,
+      "clothingExempted": true
+    },
+    "Puerto Rico": {
+      "code": "PR",
+      "salesTaxRate": 10.5
+    },
+    "Rhode Island": {
+      "code": "RI",
+      "salesTaxRate": 7,
+      "clothingExempted": true
+    },
+    "South Carolina": {
+      "code": "SC",
+      "salesTaxRate": 6
+    },
+    "South Dakota": {
+      "code": "SD",
+      "salesTaxRate": 4
+    },
+    "Tennessee": {
+      "code": "TN",
+      "salesTaxRate": 7
+    },
+    "Texas": {
+      "code": "TX",
+      "salesTaxRate": 6.25
+    },
+    "Utah": {
+      "code": "UT",
+      "salesTaxRate": 5.95
+    },
+    "Vermont": {
+      "code": "VT",
+      "salesTaxRate": 6,
+      "clothingExemption": 110
+    },
+    "Virginia": {
+      "code": "VA",
+      "salesTaxRate": 5.3
+    },
+    "Washington": {
+      "code": "WA",
+      "salesTaxRate": 6.5
+    },
+    "West Virginia": {
+      "code": "WV",
+      "salesTaxRate": 6
+    },
+    "Wisconsin": {
+      "code": "WI",
+      "salesTaxRate": 5
+    },
+    "Wyoming": {
+      "code": "WY",
+      "salesTaxRate": 4
+    }
+}
