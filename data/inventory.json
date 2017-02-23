@@ -1,37 +1,33 @@
-{
-  "shirt": {
-    "id": 0,
-    "price": 19.99,
-    "imageUrl": "/images/shirt.jpg",
-    "isClothing": true
+[
+  {
+    "name": "pen",
+    "price": 0.99,
+    "imageUrl": "/images/pen.png"
   },
-  "pants": {
-    "id": 1,
-    "price": 29.99,
-    "imageUrl": "/images/pants.jpg",
-    "isClothing": true
-  },
-  "hat": {
-    "id": 2,
+  {
+    "name": "book",
     "price": 9.99,
-    "imageUrl": "/images/hat.jpg",
-    "isClothing": true
+    "imageUrl": "/images/book.jpg"
   },
-  "socks": {
-    "id": 3,
-    "price": 5.00,
-    "imageUrl": "/images/socks.jpg",
-    "isClothing": true
+  {
+    "name": "curtains",
+    "price": 49.99,
+    "imageUrl": "/images/it's curtains for you.jpg"
   },
-  "shoes": {
-    "id": 4,
+  {
+    "name": "shoes",
     "price": 79.99,
-    "imageUrl": "/images/shoes.jpg",
+    "imageUrl": "/images/Zapatillas.jpg",
     "isClothing": true
   },
-  "television": {
-    "id": 5,
-    "price": 1999.99,
+  {
+    "name": "4K TV",
+    "price": 2499.99,
     "imageUrl": "/images/tv.jpg"
+  },
+  {
+    "name": "house",
+    "price": 799900,
+    "imageUrl": "/images/house.jpg"
   }
-}
+]
