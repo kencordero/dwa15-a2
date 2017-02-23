@@ -31,8 +31,8 @@
             <label for="state">Pick your state:</label>
             <select name="state" id="state" required>
                 <option value="">Choose</option>
-                <?php foreach ($states as $stateCode => $state): ?>
-                <option value="<?=$stateCode?>"><?=$state['name']?></option>
+                <?php foreach ($states as $code => $state): ?>
+                <option value="<?=$code?>"><?=$state['name']?></option>
                 <?php endforeach; ?>
             </select>
         </fieldset>
@@ -55,11 +55,27 @@
 
     </div>
     <?php elseif ($form->isSubmitted()): ?>
-    <div class="alert alert-info">
-        <div>Subtotal: $<?=number_format($subtotal, 2)?></div>
-        <div>Tax:      $<?=number_format($tax, 2)?></div>
-        <div>Shipping: $<?=number_format($shippingRate, 2)?></div>
-        <div>Total:    $<?=number_format($grandTotal, 2)?></div>
+    <div class="alert alert-in">
+        <div class="row">
+            <div class="col-md-6 text-right">Subtotal:</div>
+            <div class="col-md-1 text-right">$<?=number_format($subtotal, 2)?></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right">Tax Rate (<?=$stateCode?>):</div>
+            <div class="col-md-1 text-right"><em><?=$states[$stateCode]['salesTaxRate']?>%</em></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right">Tax:</div>
+            <div class="col-md-1 text-right">$<?=number_format($tax, 2)?></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right">Shipping:</div>
+            <div class="col-md-1 text-right">$<?=number_format($shippingRate, 2)?></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-right">Total:</div>
+            <div class="col-md-1 text-right"><strong>$<?=number_format($grandTotal, 2)?></strong></div>
+        </div>
     </div>
     <?php endif; ?>
 </div>
