@@ -7,6 +7,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>One Stop Shop</title>
+<!-- image source: http://paulferrett.com/fontawesome-favicon/ -->
+<link rel="shortcut icon" type="'image/x-icon" href="/images/favicon-shopping-cart.ico">
+
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css">
 <link rel="stylesheet" href="/css/styles.css">
 <div class="container">
@@ -54,7 +57,9 @@
 
     </div>
     <?php elseif ($form->isSubmitted()): ?>
+    <hr>
     <div class="alert alert-info">
+        <h1 class="text-center">Order Summary</h1>
         <div class="row">
             <div class="col-md-6 text-right">Subtotal:</div>
             <div class="col-md-1 text-right">$<?=number_format($subtotal, 2)?></div>
