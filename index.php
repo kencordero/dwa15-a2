@@ -1,5 +1,7 @@
-<?php require('data.php'); ?>
-<?php require('logic.php'); ?>
+<?php
+    require('data.php');
+    require('logic.php');
+?>
 <!doctype html>
 <html lang="en-us">
 <meta charset="utf-8">
