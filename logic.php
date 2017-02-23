@@ -4,13 +4,15 @@ require('Form.php');
 $form = new DWA\Form($_GET);
 $errors = [];
 
+$stateCode = $form->get('state');
+$shippingMethodId = $form->get('shippingMethod', -1);
+$itemIds = $form->get('items');
+
 if ($form->isSubmitted()) {
-    $stateCode = $form->get('state');
-    $shippingMethodId = $form->get('shippingMethod', null);
-    $itemIds = $form->get('items');
     $errors = $form->validate(
         [
-            'shippingMethod' => 'required'
+            'shippingMethod' => 'required',
+            'state' => 'required'
         ]
     );
 

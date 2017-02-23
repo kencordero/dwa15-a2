@@ -6,12 +6,7 @@ $shippingMethods = json_decode(file_get_contents('data/shippingMethods.json'), t
 
 function getPriceByItemId($id) {
     global $inventory;
-    foreach ($inventory as $itemName => $item) {
-        if ($id == $item['id']) {
-            return $item['price'];
-        }
-    }
-    return null;
+    return $inventory[$id]['price'];
 }
 
 function getSalesTax($stateCode) {
