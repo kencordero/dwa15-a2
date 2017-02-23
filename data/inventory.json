@@ -26,6 +26,6 @@
   },
   "television": {
     "price": 1999.99,
-    "imageUrl": "/images/tv.jpg",    
+    "imageUrl": "/images/tv.jpg"
   }
 }

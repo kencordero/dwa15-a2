@@ -1,14 +1,18 @@
 {
     "same day": {
+      "id": 0,
       "price": 14.99
     },
     "one day": {
+      "id": 1,
       "price": 9.99
     },
     "two day": {
+      "id": 2,
       "price": 4.99
     },
     "some day": {
+      "id": 999,
       "price": 0.00
     }
 }
