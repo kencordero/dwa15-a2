@@ -26,19 +26,19 @@
         <br>
         <fieldset class="dropbox">
             <legend>Which state do you live in?</legend>
-            <label for="size">Pick your state:</label>
-            <select name="state" id="state">
-                <option value="na">Choose</option>
-                <?php foreach ($states as $stateName => $state): ?>
-                <option value="<?=$state['code']?>"><?=$stateName?></option>
+            <label for="state">Pick your state:</label>
+            <select name="state" id="state" required>
+                <option value="">Choose</option>
+                <?php foreach ($states as $stateCode => $state): ?>
+                <option value="<?=$stateCode?>"><?=$state['name']?></option>
                 <?php endforeach; ?>
             </select>
         </fieldset>
         <br>
         <fieldset class="radios">
             <legend>Shipping method</legend>
-            <?php foreach ($shippingMethods as $methodName => $method): ?>
-            <input type="radio" name="shippingMethod" value="<?=$method['id']?>"> <?=$methodName.' $'.number_format($method['price'], 2)?><br>
+            <?php foreach ($shippingMethods as $methodId => $method): ?>
+            <input type="radio" name="shippingMethod" value="<?=$methodId?>" required> <?=$method['description'].' $'.number_format($method['price'], 2)?><br>
             <?php endforeach; ?>
         </fieldset>
         <br>
@@ -54,7 +54,10 @@
     </div>
     <?php elseif ($form->isSubmitted()): ?>
     <div class="alert alert-info">
-
+        <div>Subtotal: $<?=number_format($subtotal, 2)?></div>
+        <div>Tax:      $<?=number_format($tax, 2)?></div>
+        <div>Shipping: $<?=number_format($shippingRate, 2)?></div>
+        <div>Total:    $<?=number_format($grandTotal, 2)?></div>
     </div>
     <?php endif; ?>
 </div>

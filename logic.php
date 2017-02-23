@@ -1,33 +1,28 @@
 <?php
-
 require('Form.php');
-require('Tools.php');
-require('data.php');
 
 $form = new DWA\Form($_GET);
-
 $errors = [];
 
 if ($form->isSubmitted()) {
-    $state = $form->get('state');
-    $shippingMethod = $form->get('shippingMethod', null);
-    $items = $form->get('items');
-    DWA\Tools::dump($items);
-
+    $stateCode = $form->get('state');
+    $shippingMethodId = $form->get('shippingMethod', null);
+    $itemIds = $form->get('items');
     $errors = $form->validate(
         [
             'shippingMethod' => 'required'
         ]
     );
 
-    $total = 0.00;
+    $subtotal = $tax = $shippingRate = $grandTotal = 0.00;
     if (!$errors) {
-        foreach ($items as $item) {
-            DWA\Tools::dump($item);
-            $total += $inventory[$item]['price'];
+        if (!empty($itemIds)) {
+            foreach ($itemIds as $itemId) {
+                $subtotal += getPriceByItemId($itemId);
+            }
+            $tax = $subtotal * getSalesTax($stateCode);
+            $shippingRate = $shippingMethods[$shippingMethodId]['price'];
+            $grandTotal = $subtotal + $tax + $shippingRate;
         }
-        $tax = $total * $state['salesTaxRate'] / 100.0;
-        DWA\Tools::dump($total);
-        DWA\Tools::dump($tax);
     }
 }
