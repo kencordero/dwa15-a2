@@ -6,7 +6,7 @@ $errors = [];
 
 $stateCode = $form->get('state');
 $shippingMethodId = $form->get('shippingMethod', -1);
-$itemIds = $form->get('items');
+$itemIds = $form->get('items', []);
 
 if ($form->isSubmitted()) {
     $errors = $form->validate(

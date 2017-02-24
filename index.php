@@ -22,7 +22,7 @@
             </div>
             <div class="row">
             <?php foreach ($inventory as $itemId => $item): ?>
-                <label class="col-md-2"><input type="checkbox" name="items[]" value="<?=$itemId?>"> <?=$item['name'].' $'.number_format($item['price'], 2)?></label>
+                <label class="col-md-2"><input type="checkbox" name="items[]" value="<?=$itemId?>" <?php if (in_array($itemId, $itemIds)) echo 'checked'; ?>> <?=$item['name'].' $'.number_format($item['price'], 2)?></label>
             <?php endforeach; ?>
             </div>
         </fieldset>
