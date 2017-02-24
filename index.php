@@ -14,7 +14,7 @@
 <div class="container">
     <form method="post" action="index.php">
         <fieldset class="checkboxes">
-            <legend>What would you like to buy?</legend>
+            <legend>What would you like to buy?<span class="text-danger">*</span><span class="text-info small"> Please choose at least one.</span></legend>
             <div class="row">
             <?php foreach ($inventory as $item): ?>
                 <img class="itemPhoto col-md-2" src="<?=$item['imageUrl']?>" alt="<?=$item['name']?>" title="<?=$item['name']?>">
@@ -28,7 +28,7 @@
         </fieldset>
         <br>
         <fieldset class="dropdown">
-            <legend>Which state do you live in?</legend>
+            <legend>Which state do you live in?<span class="text-danger">*</span></legend>
             <label for="state">Pick your state:</label>
             <select name="state" id="state" required>
                 <option value="">Choose</option>
@@ -39,7 +39,7 @@
         </fieldset>
         <br>
         <fieldset class="radios">
-            <legend>Shipping method</legend>
+            <legend>Shipping method<span class="text-danger">*</span></legend>
             <?php foreach ($shippingMethods as $methodId => $method): ?>
             <input type="radio" name="shippingMethod" value="<?=$methodId?>" required <?php if ($methodId == $shippingMethodId) echo 'checked'; ?> > <?=$method['description'].' $'.number_format($method['price'], 2)?><br>
             <?php endforeach; ?>
