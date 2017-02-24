@@ -57,28 +57,34 @@
     </div>
     <?php elseif ($form->isSubmitted()): ?>
     <hr>
-    <div class="alert alert-info">
-        <h1 class="text-center">Order Summary</h1>
-        <div class="row">
-            <div class="col-md-6 text-right">Subtotal:</div>
-            <div class="col-md-1 text-right">$<?=number_format($subtotal, 2)?></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-right"><i>Tax Rate (<?=$stateCode?>):</i></div>
-            <div class="col-md-1 text-right"><i><?=$states[$stateCode]['salesTaxRate']?>%</i></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-right">Tax:</div>
-            <div class="col-md-1 text-right">$<?=number_format($tax, 2)?></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-right">Shipping:</div>
-            <div class="col-md-1 text-right">$<?=number_format($shippingRate, 2)?></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-right"><b>Total:</b></div>
-            <div class="col-md-1 text-right"><b>$<?=number_format($grandTotal, 2)?></b></div>
-        </div>
-    </div>
+        <?php if (!empty($itemIds)): ?>
+            <div class="alert alert-info">
+                <h1 class="text-center">Order Summary</h1>
+                <div class="row">
+                    <div class="col-md-6 text-right">Subtotal:</div>
+                    <div class="col-md-1 text-right">$<?=number_format($subtotal, 2)?></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right"><i>Tax Rate (<?=$stateCode?>):</i></div>
+                    <div class="col-md-1 text-right"><i><?=$states[$stateCode]['salesTaxRate']?>%</i></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right">Tax:</div>
+                    <div class="col-md-1 text-right">$<?=number_format($tax, 2)?></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right">Shipping:</div>
+                    <div class="col-md-1 text-right">$<?=number_format($shippingRate, 2)?></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right"><b>Total:</b></div>
+                    <div class="col-md-1 text-right"><b>$<?=number_format($grandTotal, 2)?></b></div>
+                </div>
+            </div>
+        <?php else: ?>
+            <div class="alert alert-warning">
+                <div class="text-center">Please select an item to order.</div>
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
 </div>
