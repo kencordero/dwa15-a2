@@ -1,7 +1,7 @@
 <?php
 require('Form.php');
 
-$form = new DWA\Form($_GET);
+$form = new DWA\Form($_POST);
 $errors = [];
 
 $stateCode = $form->get('state');
